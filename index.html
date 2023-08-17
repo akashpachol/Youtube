@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/regular.min.css"
+      integrity="sha512-rOTVxSYNb4+/vo9pLIcNAv9yQVpC8DNcFDWPoc+gTv9SLu5H8W0Dn7QA4ffLHKA0wysdo6C5iqc+2LEO1miAow=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="viedo_preview">
+      <header class="header">
+        <nav class="nav_bar">
+          <div class="left_side_nav">
+            <svg
+              height="24p"
+              viewBox="0 0 24 24"
+              width="24"
+              focusable="false"
+              style="pointer-events: none; display: block"
+              class="svg_icon"
+            >
+              <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path>
+            </svg>
+
+            <img src="./asset/download.png" class="nav_log" alt="" />
+          </div>
+          <div class="mid_side_nav">
+            <input type="text" class="search_box" placeholder="search" />
+            <div class="icon_div">
+              <svg
+                enable-background="new 0 0 24 24"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                focusable="false"
+                style="
+                  pointer-events: none;
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                "
+              >
+                <path
+                  d="m20.87 20.17-5.59-5.59C16.35 13.35 17 11.75 17 10c0-3.87-3.13-7-7-7s-7 3.13-7 7 3.13 7 7 7c1.75 0 3.35-.65 4.58-1.71l5.59 5.59.7-.71zM10 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"
+                ></path>
+              </svg>
+            </div>
+            <div class="icon2_div">
+              <svg
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                focusable="false"
+                style="
+                  pointer-events: none;
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                "
+              >
+                <path
+                  d="M12 3c-1.66 0-3 1.37-3 3.07v5.86c0 1.7 1.34 3.07 3 3.07s3-1.37 3-3.07V6.07C15 4.37 13.66 3 12 3zm6.5 9h-1c0 3.03-2.47 5.5-5.5 5.5S6.5 15.03 6.5 12h-1c0 3.24 2.39 5.93 5.5 6.41V21h2v-2.59c3.11-.48 5.5-3.17 5.5-6.41z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="right_side_nav">
+            <div class="icon2_div">
+              <svg
+                height="24"
+                style="
+                  pointer-events: none;
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                "
+                viewBox="0 0 24 24"
+                width="24"
+                focusable="false"
+              >
+                <path
+                  d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14v-6.39l4 1.83V8.56l-4 1.83V6m1-1v3.83L22 7v8l-4-1.83V19H2V5h16z"
+                ></path>
+              </svg>
+            </div>
+
+            <div class="icon2_div icon_badge">
+              <svg
+                enable-background="new 0 0 24 24"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                focusable="false"
+                style="
+                  pointer-events: none;
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                "
+              >
+                <path
+                  d="M10 20h4c0 1.1-.9 2-2 2s-2-.9-2-2zm10-2.65V19H4v-1.65l2-1.88v-5.15C6 7.4 7.56 5.1 10 4.34v-.38c0-1.42 1.49-2.5 2.99-1.76.65.32 1.01 1.03 1.01 1.76v.39c2.44.75 4 3.06 4 5.98v5.15l2 1.87zm-1 .42-2-1.88v-5.47c0-2.47-1.19-4.36-3.13-5.1-1.26-.53-2.64-.5-3.84.03C8.15 6.11 7 7.99 7 10.42v5.47l-2 1.88V18h14v-.23z"
+                ></path>
+              </svg>
+              <div class="badge">9 <sup>+</sup></div>
+            </div>
+            <div class="icon_img_div"></div>
+          </div>
+        </nav>
+
+        <div class="catagorys">
+          <div class="catagory">All</div>
+          <div class="catagory">Music</div>
+          <div class="catagory">Live</div>
+          <div class="catagory">HTML</div>
+          <div class="catagory">Mixes</div>
+          <div class="catagory">Playlists</div>
+          <div class="catagory">Ambient Music</div>
+          <div class="catagory">Love Songs</div>
+          <div class="catagory">Java</div>
+          <div class="catagory">News</div>
+          <div class="catagory">Tamil Cinema</div>
+          <div class="catagory">Sitcoms</div>
+          <div class="catagory">Recently uploaded</div>
+          <div class="catagory">Watched</div>
+          <div class="catagory">New to you</div>
+        </div>
+      </header>
+      <div class="sidebar">
+        <div class="sidebar_elements">
+          <div>
+            <svg
+              enable-background="new 0 0 24 24"
+              class="svg_icons"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              focusable="false"
+              style="pointer-events: none; display: block"
+            >
+              <g>
+                <path d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"></path>
+              </g>
+            </svg>
+          </div>
+
+          <div class="para">Home</div>
+        </div>
+
+        <div class="sidebar_elements">
+          <div class="">
+            <svg
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              class="svg_icons"
+              focusable="false"
+              style="pointer-events: none; display: block"
+            >
+              <path
+                d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z"
+              ></path>
+            </svg>
+          </div>
+          <div class="para">Shorts</div>
+        </div>
+
+        <div class="sidebar_elements">
+          <div>
+            <svg
+              enable-background="new 0 0 24 24"
+              height="24"
+              class="svg_icons"
+              viewBox="0 0 24 24"
+              width="24"
+              focusable="false"
+              style="pointer-events: none; display: block"
+            >
+              <path
+                d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"
+              ></path>
+            </svg>
+          </div>
+          <div class="para">Subscription</div>
+        </div>
+
+        <div class="sidebar_elements">
+          <div class="">
+            <svg
+              enable-background="new 0 0 24 24"
+              height="24"
+              class="svg_icons"
+              viewBox="0 0 24 24"
+              width="24"
+              focusable="false"
+              style="pointer-events: none; display: block"
+            >
+              <path
+                d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"
+              ></path>
+            </svg>
+          </div>
+
+          <div class="para">Library</div>
+        </div>
+      </div>
+
+      <div class="thumbnail_row">
+       
+        <div class="thumbnail_card">
+          <img src="asset/hq720.webp" class="thumbnail" alt="" />
+          <div class="viedo_time">25:00</div>
+          <div class="viedo_info_grid">
+            <div class="channel_div">
+              <img src="asset/unnamed.jpg" class="channel_img" alt="" />
+            </div>
+            <div class="viedo_information">
+              <p class="viedo_information_heading">
+                HTML & CSS Full Course - Beginner to Pro
+              </p>
+              <p class="viedo_information_data">SuperSimpleDev</p>
+              <p class="viedo_information_data">
+                <span>5.9M views</span> 1 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="thumbnail_card">
+          <img src="asset/img_1.webp" class="thumbnail" alt="" />
+          <div class="viedo_time">25:00</div>
+          <div class="viedo_info_grid">
+            <div class="channel_div">
+              <img src="asset/channel_1.jpg" class="channel_img" alt="" />
+            </div>
+            <div class="viedo_information">
+              <p class="viedo_information_heading">
+                മെസ്സി, ബുസ്ക്കെറ്റ്സ്, ആൽബ...! തനിക്ക് പ്രോബ്ലം ഉണ്ടാക്കുന്നു എന്ന് റ്റാറ്റ |
+              </p>
+              <p class="viedo_information_data">Raf Talks </p>
+              <p class="viedo_information_data">
+                <span>5.9M views</span> 1 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="thumbnail_card">
+          <img src="asset/img-2.webp" class="thumbnail" alt="" />
+          <div class="viedo_time">45:00</div>
+          <div class="viedo_info_grid">
+            <div class="channel_div">
+              <img src="asset/channel_2.jpg" class="channel_img" alt="" />
+            </div>
+            <div class="viedo_information">
+              <p class="viedo_information_heading">
+                aria-label="2.5-HOUR STUDY WITH ME /  calm piano / 🚢 Yokohama Harbor at SUNSET🌃 / with countdown+alarm by  
+              </p>
+              <p class="viedo_information_data">Abao in Tokyo</p>
+              <p class="viedo_information_data">
+                <span>5.9k views</span> 1 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="thumbnail_card">
+          <img src="asset/img_3.webp" class="thumbnail" alt="" />
+          <div class="viedo_time">45:00</div>
+          <div class="viedo_info_grid">
+            <div class="channel_div">
+              <img src="asset/channels_3.jpg" class="channel_img" alt="" />
+            </div>
+            <div class="viedo_information">
+              <p class="viedo_information_heading">
+                Kerala Blasters FC 3 - 4 Gokulam Kerala FC | Highlights | Durand Cup | 13th August 2023 
+              </p>
+              <p class="viedo_information_data">Sony LIV</p>
+              <p class="viedo_information_data">
+                <span>5.9M views</span> 1 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="thumbnail_card">
+          <img src="asset/img_4.webp" class="thumbnail" alt="" />
+          <div class="viedo_time">45:00</div>
+          <div class="viedo_info_grid">
+            <div class="channel_div">
+              <img src="asset/channel_1.jpg" class="channel_img" alt="" />
+            </div>
+            <div class="viedo_information">
+              <p class="viedo_information_heading">
+                ദൂരം കൂടിയ രണ്ടാമത്തെ ഗോൾ .....! വിസ്മയിപ്പിച്ച് മെസ്സി | Lionel Messi
+              </p>
+              <p class="viedo_information_data">Raf Talks</p>
+              <p class="viedo_information_data">
+                <span>5.9k views</span> 1 month ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="thumbnail_card">
+          <img src="asset/imag_5.webp" class="thumbnail" alt="" />
+          <div class="viedo_time">45:00</div>
+          <div class="viedo_info_grid">
+            <div class="channel_div">
+              <img src="asset/channel_4.jpg" class="channel_img" alt="" />
+            </div>
+            <div class="viedo_information">
+              <p class="viedo_information_heading">
+                Kalyanaraman | Malayalam Full Movie | Dileep, Kunchacko Boban, Navya Nair
+              </p>
+              <p class="viedo_information_data">Malayalam HD movies</p>
+              <p class="viedo_information_data">
+                <span>5.1k views</span> 1 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="thumbnail_card">
+          <img src="asset/img_6.webp" class="thumbnail" alt="" />
+          <div class="viedo_time">45:00</div>
+          <div class="viedo_info_grid">
+            <div class="channel_div">
+              <img src="asset/channels5.jpg" class="channel_img" alt="" />
+            </div>
+            <div class="viedo_information">
+              <p class="viedo_information_heading">
+                Highlights - Mumbai City FC vs Kerala Blasters FC - Match 35 | Hero ISL 2021-22 by 
+              </p>
+              <p class="viedo_information_data">Indian Super League </p>
+              <p class="viedo_information_data">
+                <span>2.9M views</span> 1 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="thumbnail_card">
+          <img src="asset/img_7.webp" class="thumbnail" alt="" />
+          <div class="viedo_time">45:00</div>
+          <div class="viedo_info_grid">
+            <div class="channel_div">
+              <img src="asset/channel_1.jpg" class="channel_img" alt="" />
+            </div>
+            <div class="viedo_information">
+              <p class="viedo_information_heading">
+                അന്നവർ CR7നെ കളിയാക്കി, ഇന്ന് താരങ്ങൾ സൗദിയിലേക്ക് ഒഴുകുന്നു: തുറന്നടിച്ച് നെയ്മർ | 
+              </p>
+              <p class="viedo_information_data">Raf Talks </p>
+              <p class="viedo_information_data">
+                <span>560 views</span> 10 minutes ago
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="division" />
+      <div class="short_section">
+        <div class="short_heading">
+          <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" style="pointer-events: none; display: block;">
+            <g>
+              <path d="M17.77,10.32l-1.2-.5L18,9.06a3.74,3.74,0,0,0-3.5-6.62L6,6.94a3.74,3.74,0,0,0,.23,6.74l1.2.49L6,14.93a3.75,3.75,0,0,0,3.5,6.63l8.5-4.5a3.74,3.74,0,0,0-.23-6.74Z" fill="red"></path>
+              <polygon points="10 14.65 15 12 10 9.35 10 14.65" fill="#fff"></polygon>
+            </g>
+          </svg>
+          <div class="heading">Shorts</div>
+        </div>
+        <div class="shorts">
+          <div class="short">
+            <img
+              src="asset/short1.webp"
+              class="shorts_img"
+              height="390"
+              alt=""
+            />
+            <div class="short_all_data">
+              <p class="shorts_img_dis">ജെസ്സലിൻ്റെ ഇടിമിന്നൽ ഷോട്ട് !⚡🔥</p>
+              <p class="shorts_views">1.1K views</p>
+            </div>
+          </div>
+          <div class="short">
+            <img
+              src="asset/shorts.webp"
+              class="shorts_img"
+              height="390"
+              alt=""
+            />
+            <div class="short_all_data">
+              <p class="shorts_img_dis">Learn to code with just your phone</p>
+              <p class="shorts_views">2.1K views</p>
+            </div>
+          </div>
+          <div class="short">
+            <img
+              src="asset/short2.webp"
+              class="shorts_img"
+              height="390"
+              alt=""
+            />
+            <div class="short_all_data">
+              <p class="shorts_img_dis">Messi Skills</p>
+              <p class="shorts_views">2.1K views</p>
+            </div>
+          </div>
+          <div class="short">
+            <img
+              src="asset/shorts_3.webp"
+              class="shorts_img"
+              height="390"
+              alt=""
+            />
+            <div class="short_all_data">
+              <p class="shorts_img_dis">with Orangutan #shorts</p>
+              <p class="shorts_views">8.1K views</p>
+            </div>
+          </div>
+          <div class="short">
+            <img
+              src="asset/shorts_4.webp"
+              class="shorts_img"
+              height="390"
+              alt=""
+            />
+            <div class="short_all_data">
+              <p class="shorts_img_dis">❗️വെറും 20/- രൂപക്ക് Sharja ഷേക്ക് with Icecream 🔥😍| Bonappetit vlogs #shorts</p>
+              <p class="shorts_views">1.1K views</p>
+            </div>
+          </div>
+          <div class="short">
+            <img
+              src="asset/short_5.webp "
+              class="shorts_img"
+              height="390"
+              alt=""
+            />
+            <div class="short_all_data">
+              <p class="shorts_img_dis">Vaathi Coming #tamil #dance #twins #youtube #youtubeshorts #vijay #master #vaathicoming</p>
+              <p class="shorts_views">2.1K views</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="division" />
+
+
+ 
+       
+       
+      
+
+    </section>
+  </body>
+</html>
